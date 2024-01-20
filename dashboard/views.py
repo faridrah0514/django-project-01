@@ -8,3 +8,6 @@ def index(request):
 
 def super_dashboard(request):
     return render(request, 'dashboard/index.html')
+
+def base(request):
+    return render(request, 'dashboard/base.html')

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'my_app.apps.MyAppConfig',
     'dashboard.apps.DashboardConfig',
-    'dashboardclone.apps.DashboardcloneConfig'
+    # 'dashboardclone.apps.DashboardcloneConfig'
 ]
 
 MIDDLEWARE = [
@@ -66,10 +66,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'my_website.context_processors.coba'
             ],
         },
     },
 ]
+
+# from .context_processors import c
 
 WSGI_APPLICATION = 'my_website.wsgi.application'
 
